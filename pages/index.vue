@@ -281,14 +281,14 @@ img {
 }
 
 .mint-button {
-  background-color: #1d4ed8;
-  border-color: #1d4ed8;
+  background-color: #1d4ed8 !important;
+  border-color: #1d4ed8 !important;
   color: white;
 }
 
 .mint-button:hover {
-  background-color: #3b82f6;
-  border-color: #3b82f6;
+  background-color: #3b82f6 !important;
+  border-color: #3b82f6 !important;
 }
 
 @media (max-width: 768px) {

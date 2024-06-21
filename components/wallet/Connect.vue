@@ -48,6 +48,13 @@ watch(isConnected, (value) => {
   </div>
 </template>
 
+<script>
+// Force light mode
+definePageMeta({
+  colorMode: 'light'
+})
+</script>
+
 <style scoped>
 .btn-primary {
   background-color: #3b82f6; /* Tailwind CSS blue-500 color */
