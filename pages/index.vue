@@ -212,6 +212,13 @@ onMounted(fetchMintCounts);
   </UContainer>
 </template>
 
+<script lang="ts">
+// Force light mode
+definePageMeta({
+  colorMode: 'light'
+})
+</script>
+
 <style scoped>
 @font-face {
   font-family: 'Minecraftia';

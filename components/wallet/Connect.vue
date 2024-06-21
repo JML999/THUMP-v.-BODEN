@@ -48,12 +48,7 @@ watch(isConnected, (value) => {
   </div>
 </template>
 
-<script>
-// Force light mode
-definePageMeta({
-  colorMode: 'light'
-})
-</script>
+
 
 <style scoped>
 .btn-primary {
