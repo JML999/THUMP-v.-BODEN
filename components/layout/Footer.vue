@@ -10,4 +10,19 @@
     </UContainer>
 </template>
 
-<style scoped></style>
+<style scoped>
+.header-container {
+  text-align: center;
+  margin-bottom: 0.26px;
+}
+
+.main-header {
+  font-size: 1em;
+  color: blue;
+}
+
+.sub-header {
+  font-size: 1em;
+  color: blue;
+}
+</style>

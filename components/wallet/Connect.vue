@@ -38,14 +38,25 @@ watch(isConnected, (value) => {
 
 <template>
   <div>
-    <UButton v-if="!isConnected" @click="connect">Connect</UButton>
+    <UButton v-if="!isConnected" @click="connect" class="btn-primary">Connect</UButton>
     <UContainer v-else>
       <div class="flex flex-col md:flex-row items-center md:gap-3">
         <div class="text-sm mr-1">{{ formatAddress(address) }}</div>
-        <UButton @click="disconnectConnectedWallet">Disconnect</UButton>
+        <UButton @click="disconnectConnectedWallet" class="btn-primary">Disconnect</UButton>
       </div>
     </UContainer>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.btn-primary {
+  background-color: #3b82f6; /* Tailwind CSS blue-500 color */
+  border-color: #3b82f6; /* Tailwind CSS blue-500 color */
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8; /* Tailwind CSS blue-700 color */
+  border-color: #1d4ed8; /* Tailwind CSS blue-700 color */
+}
+</style>

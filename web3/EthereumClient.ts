@@ -1,8 +1,12 @@
-import { ethers } from 'ethers'
-import abi from '@/assets/abi.json'
+import { ethers } from 'ethers';
+import abi from '@/assets/abi.json';
+
 declare interface IEthereumClient {
-  provider: ethers.JsonRpcProvider
-  contract: ethers.Contract
+  provider: ethers.JsonRpcProvider;
+  contract: ethers.Contract;
+
+  getMintPrice(): Promise<ethers.BigNumber>;
+  mint(signer: ethers.Signer, amount: number, cost: ethers.BigNumber): Promise<ethers.ContractTransaction>;
 }
 
 /**
@@ -13,19 +17,25 @@ declare interface IEthereumClient {
  * @param contractABI - The contract ABI
  * @returns {IEthereumClient}
  */
-export default class EthereumClient implements IEthereumClient{
-  provider: ethers.JsonRpcProvider
-  contract: ethers.Contract
+export default class EthereumClient implements IEthereumClient {
+  provider: ethers.JsonRpcProvider;
+  contract: ethers.Contract;
 
-  constructor(contractAddress: string, rpcUrl: string, chainId: number|string, contractABI: any = abi) {
-    if(typeof chainId !== 'number') {
-      chainId = parseInt(chainId)
+  constructor(contractAddress: string, rpcUrl: string, chainId: number | string, contractABI: any = abi) {
+    if (typeof chainId !== 'number') {
+      chainId = parseInt(chainId);
     }
-    this.provider = new ethers.JsonRpcProvider(rpcUrl, chainId)
-    this.contract = new ethers.Contract(contractAddress, contractABI, this.provider)
-
+    console.log(`Initializing EthereumClient for ${contractAddress}`);
+    this.provider = new ethers.JsonRpcProvider(rpcUrl, chainId);
+    this.contract = new ethers.Contract(contractAddress, contractABI, this.provider);
   }
 
-  // @dev: can add contract calls here if preferred
+  async getMintPrice() {
+    return ethers.parseUnits('0.005', 'ether'); // 0.005 ether
+  }
 
+  async mint(signer, amount, cost) {
+    const tx = await this.contract.connect(signer).normalMint(signer.getAddress(), { value: cost });
+    return tx;
+  }
 }

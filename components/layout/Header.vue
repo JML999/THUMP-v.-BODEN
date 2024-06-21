@@ -1,17 +1,15 @@
 <script lang="ts" setup>
-import {useDevice} from "~/composables/useDevice";
+import { useDevice } from "~/composables/useDevice";
 import Connect from "~/components/wallet/Connect.vue";
 
-const {isMobile, isTablet} = useDevice();
+const { isMobile, isTablet } = useDevice();
 const links = [
-  {name: 'Home', to: '/'},
-  {name: 'Mint', to: '/mint'},
-  {name: "About", to: '/about'}
+  { name: 'THUMP v. BODEN', to: '/' },
+  { name: "About", to: '/about' }
 ];
 
 const isMenuOpen = ref(false);
 const toggleMenu = () => isMenuOpen.value = !isMenuOpen.value;
-
 </script>
 
 <template>
@@ -33,7 +31,7 @@ const toggleMenu = () => isMenuOpen.value = !isMenuOpen.value;
             <div class="flex gap-6 flex-col lg:flex-row ">
               <ULink v-for="link in links" :key="link.to"
                      :to="link.to"
-                     active-class="text-primary"
+                     active-class="text-blue-500"
                      inactive-class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
               >{{ link.name }}
               </ULink>
@@ -50,7 +48,14 @@ const toggleMenu = () => isMenuOpen.value = !isMenuOpen.value;
 </template>
 
 <style scoped>
-connect {
+.text-blue-500 {
+  color: #3b82f6; /* Tailwind CSS blue-500 color */
+}
+.text-blue-700 {
+  color: #1d4ed8; /* Tailwind CSS blue-700 color */
+}
+
+.connect {
   border-top: 1px solid white;
   display: flex;
   justify-self: flex-end;
