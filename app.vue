@@ -44,6 +44,13 @@ web3Onboard.value = init({
   </div>
 </template>
 
+<script lang="ts">
+// Force light mode
+definePageMeta({
+  colorMode: 'light'
+})
+</script>
+
 <style scoped>
 .main-layout {
   display: flex;
