@@ -22,7 +22,7 @@ web3Onboard.value = init({
   wallets: [injected, coinbase],
   chains: [hychain, hychainTestnet],
   appMetadata: appMetadata,
-  theme: 'dark',
+  theme: 'light',
   connect: {
     autoConnectLastWallet: true,
     showSidebar: false,
