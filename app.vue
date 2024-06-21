@@ -51,14 +51,23 @@ definePageMeta({
 })
 </script>
 
-<style scoped>
-.main-layout {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+<style>
+body {
+  background-color: #f8f9fa; /* Set a light background color */
+  color: #212529; /* Set a contrasting text color */
 }
 
-.content {
-  flex: 1;
+html {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity)); /* Force light background */
+}
+
+@font-face {
+  font-family: 'Minecraftia';
+  src: url('~/assets/Minecraftia.ttf') format('truetype');
+}
+
+* {
+  font-family: 'Minecraftia', sans-serif;
 }
 </style>
