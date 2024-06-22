@@ -185,7 +185,7 @@ onMounted(fetchMintCounts);
   <div class="header-container">
     <h2 class="sub-header">Price: Free</h2>
     <h2 class="sub-header">First to 200 ends mint.</h2>
-    <h3 class="header2">Choose one to mint.  Additional attemps will fail.</h3>
+    <h3 class="header2">Choose one to mint.  Additional attempts will fail.</h3>
   </div>
   <UContainer class="american-flag-background">
     <ClientOnly>
