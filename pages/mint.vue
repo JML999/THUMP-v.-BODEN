@@ -189,7 +189,7 @@ onMounted(fetchMintCounts);
       <div class="info-section">
             <h2 class="sub-header">Price: Free</h2>
             <h2 class="sub-header">First to 200 Mints.</h2>
-            <h3 class="sub-header">One mint from either collection per wallet.</h3>
+            <h3 class="sub-header">ONE MINT from EITHER collection PER wallet</h3>
           </div>
       <div class="mint-columns">
         <div class="mint-column">
@@ -270,4 +270,5 @@ img {
   background-color: #3b82f6;
   border-color: #3b82f6;
 }
+
 </style>

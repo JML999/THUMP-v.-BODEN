@@ -185,7 +185,7 @@ onMounted(fetchMintCounts);
   <div class="header-container">
     <h2 class="sub-header">Price: Free</h2>
     <h2 class="sub-header">First to 200 ends mint.</h2>
-    <h3 class="sub-header">One mint from either collection per wallet.</h3>
+    <h3 class="header2">Choose one to mint.  Additional attemps will fail.</h3>
   </div>
   <UContainer class="american-flag-background">
     <ClientOnly>
@@ -287,6 +287,17 @@ img {
   font-size: 2em;
 }
 
+.header2 {
+  display: inline-block;
+  font-size: 1em;
+  color: blue; /* Adjust the color as needed */
+  background-color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: 2px solid red;
+  margin-top: 10px;
+}
+
 .mint-count {
   font-size: 2em;
   font-weight: bold;
@@ -320,5 +331,7 @@ img {
   .header-container {
     padding: 10px;
   }
+  
+
 }
 </style>
