@@ -44,6 +44,7 @@ body {
 }
 
 .footer {
+  color: black;
   text-align: center;
   margin-top: 300px;
 }
