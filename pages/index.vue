@@ -75,7 +75,6 @@ const mintBoden = async () => {
     const price = await ethBoden.getMintPrice();
     const cost = BigInt(state.bodenMintAmount) * price;
     const tx = await ethBoden.contract.connect(signer).normalMint(await signer.getAddress(), {
-      value: cost,
       gasLimit: 300000, // Set a manual gas limit
     });
     await tx.wait();
