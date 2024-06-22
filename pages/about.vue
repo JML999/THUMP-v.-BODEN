@@ -9,10 +9,10 @@
           <h2 class="sub-header">Contracts</h2>
           <ul class="contract-list">
             <li>
-              <a href="https://explorer.hytopia.com/address/0x203800c56668c6A679588FFCD8d262898c96A38b?tab=txs" target="_blank" class="link">THUMP</a>
+              <a href="https://hychain.calderaexplorer.xyz/address/0x1ea1171efb09860cc62c3d8e10a91501198ff1ff" target="_blank" class="link">THUMP</a>
             </li>
             <li>
-              <a href="https://explorer.hytopia.com/address/0xB9BDBBeD36Df340Ed71A257B8b1C1fA1f7161396?tab=contract" target="_blank" class="link">BODEN</a>
+              <a href="https://hychain.calderaexplorer.xyz/address/0xf5a3be317415594a5eaaea17048f4dcad978546b" target="_blank" class="link">BODEN</a>
             </li>
             
           </ul>
