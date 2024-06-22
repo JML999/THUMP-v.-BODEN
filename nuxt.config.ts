@@ -7,10 +7,9 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      testnetContract: process.env.NUXT_TESTNET_CONTRACT,
-      contractThump: process.env.NUXT_ENV === 'production' ? process.env.NUXT_MAINNET_CONTRACT_THUMP : process.env.NUXT_TESTNET_CONTRACT_THUMP,
-      contractBoden: process.env.NUXT_ENV === 'production' ? process.env.NUXT_MAINNET_CONTRACT_BODEN : process.env.NUXT_TESTNET_CONTRACT_BODEN,
-      env: process.env.NUXT_NODE_ENV
+      env: process.env.NUXT_NODE_ENV || 'development', // default to development if not set
+      contractThump: process.env.NUXT_NODE_ENV === 'production' ? process.env.NUXT_MAINNET_CONTRACT_THUMP : process.env.NUXT_TESTNET_CONTRACT_THUMP,
+      contractBoden: process.env.NUXT_NODE_ENV === 'production' ? process.env.NUXT_MAINNET_CONTRACT_BODEN : process.env.NUXT_TESTNET_CONTRACT_BODEN,
     }
   }
-})
+});

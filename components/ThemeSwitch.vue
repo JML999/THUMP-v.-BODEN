@@ -8,6 +8,7 @@ const isDark = computed({
     colorMode.preference = colorMode.value === 'light' ? 'light' : 'light'
   }
 })
+
 </script>
 <template>
   <ClientOnly>

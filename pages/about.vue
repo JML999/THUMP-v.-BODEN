@@ -9,13 +9,19 @@
           <h2 class="sub-header">Contracts</h2>
           <ul class="contract-list">
             <li>
-              <a href="https://etherscan.io/address/0xC5FF85CE7A617D77D7E73DB113CA804F01F02A18" target="_blank" class="link">THUMP</a>
+              <a href="https://explorer.hytopia.com/address/0x203800c56668c6A679588FFCD8d262898c96A38b?tab=txs" target="_blank" class="link">THUMP</a>
             </li>
             <li>
-              <a href="https://etherscan.io/address/0x08e2f48832a71Ed1033900365F926145Bb6D6aC4" target="_blank" class="link">BODEN</a>
+              <a href="https://explorer.hytopia.com/address/0xB9BDBBeD36Df340Ed71A257B8b1C1fA1f7161396?tab=contract" target="_blank" class="link">BODEN</a>
             </li>
+            
           </ul>
+          <div class="footer">
+      <h3>Web3 Starter template by <a class="text-primary" href="https://twitter.com/abstruked">Abstrucked.eth</a></h3>
+      <br>
+      <p>&copy; 2024</p>
         </div>
+    </div>
       </ClientOnly>
     </UContainer>
   </div>
@@ -35,6 +41,11 @@ body {
   font-family: 'Minecraftia', sans-serif;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 300px;
 }
 
 .main-header {

@@ -38,9 +38,7 @@ web3Onboard.value = init({
     <main class="content p-1 md:p-3 lg:p-7 h-80">
       <NuxtPage/>
       <UNotifications/>
-
     </main>
-    <Footer/>
   </div>
 </template>
 
@@ -53,8 +51,7 @@ definePageMeta({
 
 <style>
 body {
-  background-color: #f8f9fa; /* Set a light background color */
-  color: #212529; /* Set a contrasting text color */
+
 }
 
 html {

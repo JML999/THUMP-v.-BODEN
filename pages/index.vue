@@ -210,6 +210,13 @@ onMounted(fetchMintCounts);
       </div>
     </ClientOnly>
   </UContainer>
+  <UContainer>
+    <div class="text-center text-sm text-gray-500 p-6">
+      <h3>Web3 Starter template by <a class="text-primary" href="https://x.com/abstrucked">Abstrucked.eth</a></h3>
+      <br>
+      <p>&copy; 2024</p>
+    </div>
+    </UContainer>
 </template>
 
 <script lang="ts">
